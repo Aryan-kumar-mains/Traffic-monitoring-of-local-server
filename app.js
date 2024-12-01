@@ -14,7 +14,7 @@ const app = express(); // create an instance of express
 app.use(morgan('dev')); 
 
 app.get('/', (req, res) => { // route handler
-    for(let i = 0; i < 10000000; i++){
+    for(let i = 0; i < 10000000; i++){ // for increasing complexity of server
         
     }
     res.send('Hellow World');
